@@ -2,20 +2,61 @@
 	
 	<head>
 		<title>Corvit</title>
+
+		<style type="text/css">
+
+			.heading1{
+				color: maroon;
+				background-color: cyan;
+			}
+			.heading2{
+				color: red;
+				background-color: darkorange;
+			}
+			.design{
+				font-size: 30px;
+				border: 2px dotted;
+			}
+			table{
+				border: 2px solid;
+			}
+			th,td{
+				border: 1px solid;
+				border-color: darkgreen;
+			}
+			.Pspace{
+				margin-left: 70px;
+			}
+			.email{
+				margin-left: 30px;
+				margin-top: 40px;
+			}
+			.password{
+				margin-left: 50px;
+			}
+			.video{
+				width: 400px;
+			}
+			
+		</style>
 		
 	</head>
 
 	<body>
 
-		<h1>Hello</h1>
+		<h1 style="color:green;font-size: 60px;">Hello</h1>
 
-		<h2>Hello</h2>
+		<h2 style="color:magenta;background-color: cyan;">Hello</h2>
 		<h3>Hello</h3>
-		<h4>Hello</h4>
+
+		<h4 class="heading1 design">Hello</h4>
+		<h4 class="heading2">Corvit</h4>
+
 		<h5>Hello</h5>
 		<h6>Hello</h6>
 
-		<p>Hello Corvit</p>
+		<p class="Pspace">Hello Corvit</p>
+		<p >Hello Corvit</p>
 
 		<button>Click</button>
 
@@ -44,7 +85,7 @@
 		</dl>
 
 
-		<table border="1">
+		<!-- <table border="1">
 
 			<tr>
 				<th>Name</th>
@@ -66,8 +107,54 @@
 
 		</table>
 
-		<input type="email">
-		<input type="password">
+		<table style="border:2px solid;">
+
+			<tr>
+				<th style="border: 1px solid;">Name</th>
+				<th style="border: 1px solid;">Roll Number</th>
+				<th style="border: 1px solid;">Email</th>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid;">Ali</td>
+				<td style="border: 1px solid;">SH_LE_812</td>
+				<td style="border: 1px solid;">ali@gmail.com</td>
+			</tr>
+
+			<tr>
+				<td>Ahmed</td>
+				<td>SH_LH_614</td>
+				<td>ahmed8923SH@gmail.com</td>
+			</tr>
+
+		</table> -->
+		 <!-- Table Design  -->
+
+		<table>
+
+			<tr>
+				<th>Name</th>
+				<th>Roll Number</th>
+				<th>Email</th>
+			</tr>
+
+			<tr>
+				<td>Ali</td>
+				<td>SH_LE_812</td>
+				<td>ali@gmail.com</td>
+			</tr>
+
+			<tr>
+				<td>Ahmed</td>
+				<td>SH_LH_614</td>
+				<td>ahmed8923SH@gmail.com</td>
+			</tr>
+
+		</table>
+
+		<input type="email" class="email">
+		<br>
+		<input type="password" class="password">
 		<br>
 		<input type="date">
 		<input type="range">
@@ -81,6 +168,19 @@
 
 
 		<img src="images/header.png" style="width: 500px;">
+
+		<select>
+			<option>Tea</option>
+			<option>Cold Drink</option>
+			<option>Icecream</option>
+		</select>
+
+
+		<iframe src="second.html"></iframe>
+
+		<video class="video" controls>
+			<source src="videos/sample.mp4" type="video/mp4">
+		</video>
 
 
 		<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
