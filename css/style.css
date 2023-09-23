@@ -1,0 +1,33 @@
+
+			.heading1{
+				color: maroon;
+				background-color: cyan;
+			}
+			.heading2{
+				color: red;
+				background-color: darkorange;
+			}
+			.design{
+				font-size: 30px;
+				border: 2px dotted;
+			}
+			table{
+				border: 2px solid;
+			}
+			th,td{
+				border: 1px solid;
+				border-color: darkgreen;
+			}
+			.Pspace{
+				margin-left: 70px;
+			}
+			.email{
+				margin-left: 30px;
+				margin-top: 40px;
+			}
+			.password{
+				margin-left: 50px;
+			}
+			.video{
+				width: 400px;
+			}
