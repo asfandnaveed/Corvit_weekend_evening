@@ -1,0 +1,13 @@
+@font-face{
+	src: url('../fonts/DimorInlineA.ttf');
+	font-family: 'Dimor';
+}
+
+.bg_header{
+	background-image: url('../images/BackgroundImage.png');
+}
+
+.heading{
+	font-family: 'Dimor';
+	color: #B8946B;
+}
