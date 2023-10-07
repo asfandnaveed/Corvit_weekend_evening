@@ -1,0 +1,11 @@
+@font-face{
+	src: url('../fonts/SuperbaBold Roman.ttf');
+	font-family: 'SuperbaBold';
+}
+.bg_header{
+	background-image: url('../images/backgroundImage.png');
+}
+.bg_heading{
+	font-size: 120px;
+	font-family: 'SuperbaBold';
+}
