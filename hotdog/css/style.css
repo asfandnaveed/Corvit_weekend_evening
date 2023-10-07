@@ -5,6 +5,7 @@
 
 .bg_header{
 	background-image: url('../images/BackgroundImage.png');
+	height: 600px;
 }
 
 .heading{
