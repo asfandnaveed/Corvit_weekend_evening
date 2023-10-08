@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript</title>
+
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<!-- <div id="div_text">Hello Corvit</div>
+	<img src="">
+	<p></p>
+	<div>
+		<div>
+			
+		</div>
+	</div>
+
+
+	<button onclick="changeStyle();">Click Me</button> -->
+
+	<br>
+	<br>
+	<input id="userAge" type="number" class="form-control w-25" placeholder="Enter Age">
+	<button onclick="calculateAge();" class="btn btn-warning">Submit</button>
+	<div id="result"></div>
+
+
+	<img id="header_img" src="images/header2.jpeg">
+	<button onclick="changeImage();" class="btn btn-danger">Change Image</button>
+	
+
+
+<script type="text/javascript">
+
+	function changeImage(){
+		document.getElementById('header_img').src = 'images/header3.png';
+	}
+
+	function calculateAge (){
+		// document.getElementById('div_text').innerHTML = '<h1>Text Changed</h1>';
+		// document.getElementById('div_text').style.color = 'blue';
+		// document.getElementById('div_text').style.fontSize = '50px';
+
+		// var x = 5;
+		// var y =10;
+		// var z = 'ali';
+		// var a = 'Ahmad';
+
+		// document.getElementById('result').innerHTML = x+y;
+
+		var age =  document.getElementById('userAge').value
+
+		if(age < 40){
+
+			document.getElementById('result').innerHTML ='You are Young';
+
+		}else{
+			document.getElementById('result').innerHTML ='You are old';
+		}
+
+
+	}
+
+
+	
+
+
+	
+
+
+</script>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
