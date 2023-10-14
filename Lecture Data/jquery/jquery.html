@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jquery</title>
+</head>
+<body>
+
+	<div id="text" >Hello Corvit</div>
+	<button class="btn">Hide Text</button>
+	<button class="btn2">Hide Text</button>
+	<button class="btn3">Animate</button>
+
+	<div class="box" style="width:200px;height: 200px;background-color:gold ;position: absolute;"></div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+
+	<script type="text/javascript">
+		
+		$('.btn').click(function(){
+
+			$('#text').fadeOut(4000);
+
+		});
+
+		$('.btn2').click(function(){
+
+			$('#text').fadeIn(3000);
+
+		});
+
+
+		$('.btn3').click(function(){
+
+			$('.box').animate({
+				right:"0px",
+				bottom:"0px",
+				height:"400px",
+
+			});
+
+		});
+
+
+
+		$('#text').dblclick(function(){
+
+			$(this).hide();
+		});
+
+	</script>
+
+</body>
+</html>
