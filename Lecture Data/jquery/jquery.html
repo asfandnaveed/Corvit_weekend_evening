@@ -17,39 +17,52 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 
 	<script type="text/javascript">
-		
-		$('.btn').click(function(){
+
+
+
+		$(document).ready(function(){
+
+			$('.btn').click(function(){
 
 			$('#text').fadeOut(4000);
 
-		});
+			});
 
-		$('.btn2').click(function(){
+			$('.btn2').click(function(){
 
-			$('#text').fadeIn(3000);
+				$('#text').fadeIn(3000);
 
-		});
+			});
 
 
-		$('.btn3').click(function(){
+			$('.btn3').click(function(){
 
-			$('.box').animate({
-				right:"0px",
-				bottom:"0px",
-				height:"400px",
+				$('.box').animate({
+					right:"0px",
+					bottom:"0px",
+					height:"400px",
 
+				});
+
+			});
+
+
+
+			$('#text').dblclick(function(){
+
+				$(this).hide();
 			});
 
 		});
 
 
 
-		$('#text').dblclick(function(){
-
-			$(this).hide();
-		});
+		
+		
 
 	</script>
+
+	<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/31b0c1dc-5ff1-45df-b96c-fa1200c8c554/QTcdtW0332.json" background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" loop autoplay hover></dotlottie-player>
 
 </body>
 </html>
