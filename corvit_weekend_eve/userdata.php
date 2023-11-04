@@ -9,6 +9,14 @@ $databaseName= 'corvit_weekend_eve';
 $con = new mysqli($serverAddress,$username,$password,$databaseName);
 
 
+$test = 'Corvit';
+
+$sql = "SELECT * FROM students";
+
+$result =  $con->query($sql);
+
+
+
 
 ?>
 
@@ -36,16 +44,34 @@ $con = new mysqli($serverAddress,$username,$password,$databaseName);
 			<th>Address</th>
 			<th>Register Time</th>
 		</tr>
-		<tr>
-			<td>1</td>
-			<td>LH_OK_333</td>
-			<td>Ali</td>
-			<td>test@gmail.com</td>
-			<td>Test</td>
-			<td>12</td>
-			<td>Lahore Punjab</td>
-			<td>2023-10-29 11:40:28</td>
-		</tr>
+		<?php
+
+			if( $result-> num_rows >0){
+
+				while( $row = $result -> fetch_assoc() ){
+
+
+					echo '<tr>';
+
+					echo '<td>'.$row['id'].'</td>';
+					echo '<td>'.$row['roll_number'].'</td>';
+					echo '<td>'.$row['name'].'</td>';
+					echo '<td>'.$row['email'].'</td>';
+					echo '<td>'.$row['father_name'].'</td>';
+					echo '<td>'.$row['age'].'</td>';
+					echo '<td>'.$row['address'].'</td>';
+					echo '<td>'.$row['created_at'].'</td>';
+
+					echo '</tr>';
+
+				}
+
+			}else{
+				echo 'No Data Available';
+			}
+
+		?>
+		
 	</table>
 
 
